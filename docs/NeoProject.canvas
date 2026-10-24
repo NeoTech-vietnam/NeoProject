@@ -1,0 +1,939 @@
+{
+  "nodes": [
+    {
+      "id": "guide",
+      "type": "text",
+      "x": 0,
+      "y": -850,
+      "width": 3200,
+      "height": 230,
+      "text": "# NeoProject v2 — Agreed architecture and checkout status\n\n**Configured:** NeoProject has exactly five direct submodules: NeoMind, NeoKnowledge, NeoApps, NeoLab and NeoPlayground. Daily development stays independent in each repository.\n**Initial pointers:** README-only commits; setup verification does not establish a tested product release or stable integration.\n**Colors:** green = six newly created repositories; blue = existing repositories; yellow = proposals; gray = structure and roadmap.\nSee the checkout and pinned-commit cards below. Existing repositories and content remain separate.",
+      "color": "#64748b"
+    },
+    {
+      "id": "root",
+      "type": "text",
+      "x": 1330,
+      "y": -580,
+      "width": 540,
+      "height": 330,
+      "text": "# NeoProject v2 · CONFIGURED\n\n[NeoTech-vietnam/NeoProject](https://github.com/NeoTech-vietnam/NeoProject) · Public\n\nSuperproject: records selected exact commits.\nFive direct submodules are initialized.\nDaily work happens in component repositories.\n\nSetup commit: `f325059` · local `main`.\nInitial README pointers are not tested releases.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "group-mind",
+      "type": "group",
+      "x": 0,
+      "y": -40,
+      "width": 600,
+      "height": 2260,
+      "label": "NeoMind · 1 repo",
+      "color": "#64748b"
+    },
+    {
+      "id": "mind",
+      "type": "text",
+      "x": 20,
+      "y": 0,
+      "width": 560,
+      "height": 250,
+      "text": "# NeoMind · DIRECT SUBMODULE\n\n[NeoMind](https://github.com/NeoTech-vietnam/NeoMind) · Public\n\nShared AI workflows, agent skills and tools.\nPath: `NeoMind/` · pin: `c918f0396bc3`.\n\nREADME only; no workflow or skill migration.\n[NeoMindv1](https://github.com/NeoTech-vietnam/NeoMindv1) remains a separate repository.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "mind-contents",
+      "type": "text",
+      "x": 20,
+      "y": 300,
+      "width": 560,
+      "height": 310,
+      "text": "## Các phần có thể phát triển\n\n• Workflow: nghiên cứu, lập kế hoạch, triển khai, kiểm tra.\n• Skills: tác vụ chuyên môn có thể dùng lại.\n• Adapter: tích hợp từng công cụ / editor.\n• Template: hướng dẫn dự án và hồ sơ bàn giao.\n• Ví dụ áp dụng và bộ kiểm tra chất lượng skill.",
+      "color": "#64748b"
+    },
+    {
+      "id": "mind-first",
+      "type": "text",
+      "x": 20,
+      "y": 660,
+      "width": 560,
+      "height": 340,
+      "text": "## Giai đoạn đầu · Một nguồn chuẩn\n\n1. Kiểm kê workflow / skill đang có.\n2. Chốt một vòng đời task chính; làm rõ vai trò Trellis và VeryThinker.\n3. Xác định bản gốc và bản adapter sinh ra.\n4. Ghi hướng dẫn cài đặt / cập nhật / gỡ bỏ.\n\n**Đầu ra:** một dự án Neo mới áp dụng được mà không chép sửa thủ công nhiều nơi.",
+      "color": "#64748b"
+    },
+    {
+      "id": "mind-next",
+      "type": "text",
+      "x": 20,
+      "y": 1050,
+      "width": 560,
+      "height": 340,
+      "text": "## Mở rộng · Tái sử dụng có kiểm soát\n\n• Đóng gói bộ skill theo nhu cầu: tài liệu, embedded, ứng dụng.\n• Gắn phiên bản cho bộ công cụ và adapter.\n• Kiểm tra đầu vào, đầu ra và ví dụ đại diện.\n• Thử thay đổi workflow ở dự án mẫu trước khi cập nhật các repo.\n\n**Đầu ra:** biết dự án nào đang dùng phiên bản nào.",
+      "color": "#64748b"
+    },
+    {
+      "id": "mind-later",
+      "type": "text",
+      "x": 20,
+      "y": 1440,
+      "width": 560,
+      "height": 340,
+      "text": "## Dài hạn · Đo hiệu quả thực tế\n\n• Theo dõi tác vụ nào thành công, cần sửa hoặc thất bại.\n• Cải thiện skill bằng tình huống đã gặp.\n• Tự động hóa cài đặt / cập nhật khi nhu cầu lặp lại đủ rõ.\n\n**Chỉ mở rộng khi cần:** điều phối nhiều agent và hệ thống đánh giá phức tạp. Không cần tự viết lại công cụ upstream.",
+      "color": "#64748b"
+    },
+    {
+      "id": "mind-boundary",
+      "type": "text",
+      "x": 20,
+      "y": 1830,
+      "width": 560,
+      "height": 340,
+      "text": "## Ranh giới & điểm cần chốt\n\nGiữ workflow / skill dùng chung tại NeoMind; chính sách đặc thù vẫn thuộc repo sử dụng. Nhật ký task sản phẩm ở dự án sản phẩm.\n\n**Cần chốt:** workflow chính; nguồn chuẩn của skill; adapter nào cần hỗ trợ trước.\n\n**Thước đo:** dự án mới dùng được bộ quy trình, cập nhật không làm lệch các bản cài.",
+      "color": "#64748b"
+    },
+    {
+      "id": "group-knowledge",
+      "type": "group",
+      "x": 660,
+      "y": -40,
+      "width": 600,
+      "height": 2260,
+      "label": "NeoKnowledge · 1 repo",
+      "color": "#64748b"
+    },
+    {
+      "id": "knowledge",
+      "type": "text",
+      "x": 680,
+      "y": 0,
+      "width": 560,
+      "height": 250,
+      "text": "# NeoKnowledge · DIRECT SUBMODULE\n\n[NeoKnowledge](https://github.com/NeoTech-vietnam/NeoKnowledge) · Public\n\nKnowledge, notes, questions and references.\nPath: `NeoKnowledge/` · pin: `4a0749fb7f2f`.\n\nREADME only; no content migration.\n[NeoLearning](https://github.com/NeoTech-vietnam/NeoLearning) remains separate.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "knowledge-contents",
+      "type": "text",
+      "x": 680,
+      "y": 300,
+      "width": 560,
+      "height": 310,
+      "text": "## Các phần có thể phát triển\n\n• Kiến thức Embedded và các lĩnh vực liên quan.\n• Chương trình cơ điện tử / môn học.\n• Ghi chú khái niệm, phương pháp, kinh nghiệm.\n• Bộ câu hỏi và bài tự kiểm tra.\n• Roadmap và kế hoạch học.\n• Danh mục tài nguyên: nguồn, liên kết Drive, chủ đề.",
+      "color": "#64748b"
+    },
+    {
+      "id": "knowledge-first",
+      "type": "text",
+      "x": 680,
+      "y": 660,
+      "width": 560,
+      "height": 340,
+      "text": "## Giai đoạn đầu · Dễ tìm, dễ hiểu\n\n1. Giữ đường dẫn bài học đang dùng.\n2. Cập nhật mục lục và phân loại chủ đề.\n3. Thống nhất note ngắn: điều hiểu được, ví dụ, nguồn và câu hỏi.\n4. Liên kết tới mã thực hành thay vì chép nhiều bản.\n\n**Đầu ra:** từ một chủ đề tìm được ghi chú, câu hỏi, tài liệu và bài tập liên quan.",
+      "color": "#64748b"
+    },
+    {
+      "id": "knowledge-next",
+      "type": "text",
+      "x": 680,
+      "y": 1050,
+      "width": 560,
+      "height": 340,
+      "text": "## Mở rộng · Học có kiểm chứng\n\n• Tách câu hỏi khái niệm, phân tích và thực hành.\n• Bổ sung đáp án / cách tự kiểm tra ở phần riêng.\n• Liên kết kiến thức tiên quyết và chủ đề liên quan.\n• Kết nối bài học với ví dụ NeoPlayground và ứng dụng trong NeoLab.\n\n**Đầu ra:** mỗi mảng có đường học và cách kiểm tra hiểu biết.",
+      "color": "#64748b"
+    },
+    {
+      "id": "knowledge-later",
+      "type": "text",
+      "x": 680,
+      "y": 1440,
+      "width": 560,
+      "height": 340,
+      "text": "## Dài hạn · Kho kiến thức kết nối\n\n• Ứng dụng NeoApps hỗ trợ tìm kiếm, ôn tập và theo dõi học.\n• Chỉ thêm ID ổn định / ánh xạ đường dẫn khi có nhu cầu chuyển đổi.\n• Ghi nhận điểm còn thiếu và cập nhật note từ thực nghiệm.\n\n**Tùy chọn:** công cụ AI truy xuất kiến thức, khi nguồn và chất lượng ghi chú đã ổn.",
+      "color": "#64748b"
+    },
+    {
+      "id": "knowledge-boundary",
+      "type": "text",
+      "x": 680,
+      "y": 1830,
+      "width": 560,
+      "height": 340,
+      "text": "## Ranh giới & điểm cần chốt\n\nKiến thức tổng quát thuộc NeoKnowledge. Mã chạy chuẩn thuộc NeoPlayground. Đặc tả sản phẩm chuẩn thuộc NeoLab.\n\n**Drive cần xác nhận:** có lưu PDF / video / tài nguyên lớn và chỉ liên kết từ note?\n\n**Thước đo:** tìm được nguồn, trả lời được câu hỏi, chạy được bài thực hành liên quan.",
+      "color": "#64748b"
+    },
+    {
+      "id": "group-apps",
+      "type": "group",
+      "x": 1320,
+      "y": -40,
+      "width": 600,
+      "height": 2260,
+      "label": "NeoApps · Repo đã tạo; quan hệ repo thành phần còn mở",
+      "color": "#64748b"
+    },
+    {
+      "id": "apps",
+      "type": "text",
+      "x": 1340,
+      "y": 0,
+      "width": 560,
+      "height": 250,
+      "text": "# NeoApps · DIRECT SUBMODULE\n\n[NeoApps](https://github.com/NeoTech-vietnam/NeoApps) · Public\n\nEntry repository for Web / Android / iOS apps.\nPath: `NeoApps/` · pin: `c82f47d88aba`.\n\nREADME only. NeoWeb / NeoWatchApp remain separate. Future app-repository relationships are undecided.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "apps-contents",
+      "type": "text",
+      "x": 1340,
+      "y": 300,
+      "width": 560,
+      "height": 310,
+      "text": "## Các phần có thể phát triển\n\n• NeoWeb: cần xác nhận phạm vi xuất bản / ứng dụng.\n• Ứng dụng học tập: nội dung, biên soạn, tiến độ.\n• Ứng dụng đồng hành thiết bị NeoAssistant.\n• Trong mỗi repo: Web / Android / iOS khi sản phẩm cần.\n• Tài liệu ứng dụng, tài nguyên UI và kiểm thử.\n\nCác ứng dụng bổ sung là hướng đề xuất.",
+      "color": "#64748b"
+    },
+    {
+      "id": "apps-first",
+      "type": "text",
+      "x": 1340,
+      "y": 660,
+      "width": 560,
+      "height": 340,
+      "text": "## Giai đoạn đầu · Chốt sản phẩm trước\n\n1. Làm rõ Learning Web và NeoWeb: cùng hệ thống hay hai ứng dụng.\n2. Chọn một trải nghiệm ưu tiên, trước mắt có thể là Web.\n3. Cấu hình rõ nguồn nội dung và nơi lưu tiến độ.\n4. Xác định backend thuộc repo nào nếu ứng dụng cần.\n\n**Đầu ra:** một ứng dụng chạy độc lập với cấu trúc repo nội dung.",
+      "color": "#64748b"
+    },
+    {
+      "id": "apps-next",
+      "type": "text",
+      "x": 1340,
+      "y": 1050,
+      "width": 560,
+      "height": 340,
+      "text": "## Mở rộng · Theo nhu cầu sử dụng\n\n• Android / iOS khi có nhu cầu học trên điện thoại hoặc kết nối thiết bị.\n• API, giao thức và định dạng dữ liệu được ghi phiên bản.\n• Kiểm tra luồng chính trên từng nền tảng.\n• Tái sử dụng phần chung khi đã có sự trùng lặp thực tế.\n\n**Đầu ra:** cùng sản phẩm, các nền tảng có phạm vi chức năng rõ ràng.",
+      "color": "#64748b"
+    },
+    {
+      "id": "apps-later",
+      "type": "text",
+      "x": 1340,
+      "y": 1440,
+      "width": 560,
+      "height": 340,
+      "text": "## Dài hạn · Trải nghiệm liên tục\n\n• Ngoại tuyến và đồng bộ khi có nhu cầu nhiều thiết bị.\n• Liên kết học tập với thực hành và thiết bị thật.\n• Quy trình phát hành riêng cho Web và mobile.\n\n**Chưa mặc định:** tài khoản cloud, dịch vụ backend chung hay một framework đa nền tảng cho tất cả.",
+      "color": "#64748b"
+    },
+    {
+      "id": "apps-boundary",
+      "type": "text",
+      "x": 1340,
+      "y": 1830,
+      "width": 560,
+      "height": 340,
+      "text": "## Ranh giới & điểm cần chốt\n\nỨng dụng sử dụng kiến thức qua liên kết / cấu hình, không duy trì bản sao nội dung độc lập. Firmware thuộc NeoLab.\n\n**Cần chốt:** repo theo ứng dụng hay theo nền tảng; quan hệ NeoWeb / Learning Web; nơi quản lý backend.\n\n**Thước đo:** các luồng sử dụng chính chạy được, cập nhật app không làm mất tiến độ.",
+      "color": "#64748b"
+    },
+    {
+      "id": "group-lab",
+      "type": "group",
+      "x": 1980,
+      "y": -40,
+      "width": 600,
+      "height": 2260,
+      "label": "NeoLab · Repo đã tạo; quan hệ repo thành phần còn mở",
+      "color": "#64748b"
+    },
+    {
+      "id": "lab",
+      "type": "text",
+      "x": 2000,
+      "y": 0,
+      "width": 560,
+      "height": 250,
+      "text": "# NeoLab · DIRECT SUBMODULE\n\n[NeoLab](https://github.com/NeoTech-vietnam/NeoLab) · Public\n\nProducts, concepts, hardware and firmware.\nPath: `NeoLab/` · pin: `3c0b9d346730`.\n\nREADME only; no design or code migration.\nNeoWatch remains separate. Future product-repository relationships are undecided.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "lab-contents",
+      "type": "text",
+      "x": 2000,
+      "y": 300,
+      "width": 560,
+      "height": 310,
+      "text": "## Các phần trong mỗi sản phẩm\n\n• Concept, mục tiêu và yêu cầu.\n• Hardware: schematic, PCB, BOM, cơ khí.\n• Firmware: mã nguồn, cấu hình, cập nhật.\n• Giao tiếp với ứng dụng và hệ thống ngoài.\n• Kiểm thử, bằng chứng và bản phát hành.\n• Hướng dẫn lắp ráp / sử dụng khi cần.",
+      "color": "#64748b"
+    },
+    {
+      "id": "lab-first",
+      "type": "text",
+      "x": 2000,
+      "y": 660,
+      "width": 560,
+      "height": 340,
+      "text": "## Giai đoạn đầu · Từ ý tưởng tới thử nghiệm\n\n1. Liệt kê concept, ưu tiên một sản phẩm.\n2. Với NeoAssistant: chốt chức năng tối thiểu và phần cứng thử nghiệm.\n3. Xác định tiêu chí chứng minh chức năng hoạt động.\n4. Chọn repo riêng khi concept bắt đầu có mã / thiết kế cần quản lý.\n\n**Đầu ra:** nguyên mẫu chứng minh được một mục tiêu cụ thể.",
+      "color": "#64748b"
+    },
+    {
+      "id": "lab-next",
+      "type": "text",
+      "x": 2000,
+      "y": 1050,
+      "width": 560,
+      "height": 340,
+      "text": "## Mở rộng · Tích hợp hệ thống\n\n• Tích hợp phần cứng, firmware và ứng dụng đồng hành.\n• Ghi giao thức / API để app và firmware cùng theo.\n• Theo dõi tương thích phiên bản board và firmware.\n• Lưu kết quả kiểm tra trên thiết bị thật.\n\n**Đầu ra:** một cấu hình sản phẩm có thể lắp, nạp và kiểm tra lại.",
+      "color": "#64748b"
+    },
+    {
+      "id": "lab-later",
+      "type": "text",
+      "x": 2000,
+      "y": 1440,
+      "width": 560,
+      "height": 340,
+      "text": "## Dài hạn · Sản phẩm có thể phát hành\n\n• Các vòng sửa PCB, firmware và cơ khí có lịch sử rõ.\n• Quy trình cập nhật, chẩn đoán lỗi và phục hồi.\n• Hướng dẫn triển khai và bộ kiểm tra thiết bị.\n• Chuẩn bị sản xuất khi thực sự có nhu cầu.\n\nMỗi bản phát hành chỉ rõ phần cứng, firmware và app tương thích.",
+      "color": "#64748b"
+    },
+    {
+      "id": "lab-boundary",
+      "type": "text",
+      "x": 2000,
+      "y": 1830,
+      "width": 560,
+      "height": 340,
+      "text": "## Ranh giới & điểm cần chốt\n\nKiến thức tổng quát liên kết về NeoKnowledge. Thử nghiệm độc lập có thể ở NeoPlayground; mã sản phẩm tích hợp thuộc NeoLab.\n\n**Cần chốt:** nơi tập hợp concept; khi nào tạo repo sản phẩm; vị trí đặc tả giao tiếp chuẩn.\n\n**Thước đo:** có bằng chứng trên phần cứng thật, tái lập được cấu hình đã kiểm tra.",
+      "color": "#64748b"
+    },
+    {
+      "id": "group-playground",
+      "type": "group",
+      "x": 2640,
+      "y": -40,
+      "width": 600,
+      "height": 2260,
+      "label": "NeoPlayground · 1 repo",
+      "color": "#64748b"
+    },
+    {
+      "id": "playground",
+      "type": "text",
+      "x": 2660,
+      "y": 0,
+      "width": 560,
+      "height": 250,
+      "text": "# NeoPlayground · DIRECT SUBMODULE\n\n[NeoPlayground](https://github.com/NeoTech-vietnam/NeoPlayground) · Public\n\nCode practice, experiments and runnable examples.\nPath: `NeoPlayground/` · pin: `7aede8a913dd`.\n\nREADME only; no example migration.\nNeoExamples and the existing example repositories remain separate.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "playground-contents",
+      "type": "text",
+      "x": 2660,
+      "y": 300,
+      "width": 560,
+      "height": 310,
+      "text": "## Các nhánh có thể phát triển\n\n• ESP32: theo framework / board khi cần.\n• STM32: theo dòng chip / board khi cần.\n• Linux / Windows: ví dụ phụ thuộc hệ điều hành.\n• Languages: C, C++, Python…\n• Algorithms: bài tập thuật toán.\n\nESP32 / STM32 theo note; các nhánh còn lại là đề xuất. Mỗi ví dụ có một vị trí nguồn chuẩn.",
+      "color": "#64748b"
+    },
+    {
+      "id": "playground-first",
+      "type": "text",
+      "x": 2660,
+      "y": 660,
+      "width": 560,
+      "height": 340,
+      "text": "## Giai đoạn đầu · Chạy lại được\n\n1. Kiểm kê ví dụ hiện có và nơi lưu.\n2. Chuyển từng nhóm nhỏ, giữ liên kết bài học.\n3. Mỗi ví dụ có README: mục tiêu, môi trường, lệnh chạy, kết quả mong đợi.\n4. Bỏ theo dõi đầu ra build đã xác nhận là sinh tự động.\n\n**Đầu ra:** người khác làm theo README chạy được bài đại diện.",
+      "color": "#64748b"
+    },
+    {
+      "id": "playground-next",
+      "type": "text",
+      "x": 2660,
+      "y": 1050,
+      "width": 560,
+      "height": 340,
+      "text": "## Mở rộng · Tìm và kiểm tra nhanh\n\n• Mục lục theo nền tảng, kèm chủ đề và kiến thức liên quan.\n• Ghi trạng thái: chưa chạy / build được / đã chạy trên board.\n• Ghi phiên bản SDK và board đã dùng.\n• Tự động kiểm tra ví dụ chạy trên máy hoặc build khi phù hợp; phần cứng kiểm tra riêng.\n\nKhông ép mọi nền tảng dùng cùng một hệ build.",
+      "color": "#64748b"
+    },
+    {
+      "id": "playground-later",
+      "type": "text",
+      "x": 2660,
+      "y": 1440,
+      "width": 560,
+      "height": 340,
+      "text": "## Dài hạn · Thực hành thành năng lực\n\n• Chuỗi bài từ cơ bản tới tích hợp.\n• Bài đo đạc / chẩn đoán lỗi và đáp án tham khảo.\n• Đưa kết quả thực nghiệm về NeoKnowledge.\n• Chọn ví dụ đã kiểm chứng làm điểm xuất phát cho NeoLab.\n\nChỉ tách thư viện dùng chung khi nhiều bài thực sự cần; thử nghiệm chưa phải mã sản phẩm.",
+      "color": "#64748b"
+    },
+    {
+      "id": "playground-boundary",
+      "type": "text",
+      "x": 2660,
+      "y": 1830,
+      "width": 560,
+      "height": 340,
+      "text": "## Ranh giới & điểm cần chốt\n\nSnippet giải thích nằm trong note; ví dụ chạy được có nguồn tại NeoPlayground. Không chép cùng ví dụ theo nhiều chủ đề.\n\n**Đã chốt:** NeoProject ghim commit stable của Playground; không bắt buộc Playground có release/tag. Phát triển hằng ngày độc lập.\n\n**Còn mở:** kế thừa NeoExamples hiện có; ngoại lệ bài tập cạnh note.\n**Thước đo:** tìm được bài và tái lập kết quả từ hướng dẫn.",
+      "color": "#64748b"
+    },
+    {
+      "id": "relationships-title",
+      "type": "text",
+      "x": 0,
+      "y": 2350,
+      "width": 3200,
+      "height": 160,
+      "text": "# Các nhóm kết nối với nhau như thế nào?\n\nNeoMind cung cấp cách làm việc cho các nhóm. NeoKnowledge ghi kiến thức. NeoPlayground kiểm chứng bằng ví dụ. NeoLab áp dụng thành sản phẩm. NeoApps cung cấp trải nghiệm sử dụng.\nCác dòng dưới đây là quan hệ tham chiếu / sử dụng, không phải quan hệ chứa thư mục.",
+      "color": "#64748b"
+    },
+    {
+      "id": "rel-knowledge-practice",
+      "type": "text",
+      "x": 0,
+      "y": 2570,
+      "width": 560,
+      "height": 240,
+      "text": "## NeoKnowledge ↔ NeoPlayground\n\nGhi chú đặt vấn đề và dẫn tới bài thực hành. Kết quả thực nghiệm quay lại bổ sung kiến thức. Nguồn mã chỉ có một nơi.",
+      "color": "#64748b"
+    },
+    {
+      "id": "rel-practice-product",
+      "type": "text",
+      "x": 660,
+      "y": 2570,
+      "width": 560,
+      "height": 240,
+      "text": "## NeoPlayground → NeoLab\n\nVí dụ đã kiểm chứng giúp khởi đầu sản phẩm. Khi trở thành mã tích hợp của sản phẩm, trách nhiệm kiểm thử / phát hành thuộc repo sản phẩm.",
+      "color": "#64748b"
+    },
+    {
+      "id": "rel-product-app",
+      "type": "text",
+      "x": 1320,
+      "y": 2570,
+      "width": 560,
+      "height": 240,
+      "text": "## NeoLab ↔ NeoApps\n\nThiết bị trao đổi với ứng dụng qua giao thức được thống nhất. Phần cứng, firmware và app có bảng tương thích phiên bản.",
+      "color": "#64748b"
+    },
+    {
+      "id": "rel-knowledge-app",
+      "type": "text",
+      "x": 1980,
+      "y": 2570,
+      "width": 560,
+      "height": 240,
+      "text": "## NeoKnowledge → NeoApps\n\nỨng dụng đọc / biên soạn nội dung qua thư mục hoặc giao diện được xác định; giữ liên kết và ID khi cấu trúc nội dung đổi.",
+      "color": "#64748b"
+    },
+    {
+      "id": "rel-mind-projects",
+      "type": "text",
+      "x": 2640,
+      "y": 2570,
+      "width": 560,
+      "height": 240,
+      "text": "## NeoMind → các repo Neo\n\nDùng phiên bản workflow / skill xác định. Mỗi repo giữ chính sách và trạng thái công việc riêng; không phát triển nhiều bản skill lệch nhau.",
+      "color": "#64748b"
+    },
+    {
+      "id": "decisions",
+      "type": "text",
+      "x": 0,
+      "y": 2900,
+      "width": 1550,
+      "height": 300,
+      "text": "## Quyết định đã chốt & phần còn mở\n\n**Đã chốt:** NeoProject dùng submodule khóa commit stable; không cập nhật khi làm việc hằng ngày.\n**Đã tạo:** NeoProject, NeoMind, NeoKnowledge, NeoApps, NeoLab, NeoPlayground. Theo yêu cầu mới, NeoApps / NeoLab có repo riêng, thay cho phương án trước chỉ có nhóm N repo.\n\n**Còn mở:** quan hệ repo đầu mối với từng app / sản phẩm; backend, concept, đặc tả giao tiếp; Drive; kế thừa NeoExamples / NeoMindv1.\n**Chưa làm:** chuyển dữ liệu, thêm submodule hoặc phát hành.",
+      "color": "#64748b"
+    },
+    {
+      "id": "rollout",
+      "type": "text",
+      "x": 1650,
+      "y": 2900,
+      "width": 1550,
+      "height": 300,
+      "text": "## Đề xuất thứ tự triển khai thiết kế\n\n**Bước 1:** ánh xạ nội dung hiện có sang 5 nhóm; chốt nguồn chuẩn và repo đích.\n**Bước 2:** chuẩn hóa một note, một example và một app đại diện; phát triển trong từng repo.\n**Bước 3:** chuyển từng nhóm nhỏ, giữ liên kết và sao lưu tiến độ; commit và đẩy nguồn cần giữ lên remote.\n**Bước 4:** chọn commit stable, ghi trạng thái kiểm tra; thêm / cập nhật submodule rồi commit NeoProject. Gắn tag mốc tổng khi cần.\n\nKhông cần các repo phát hành cùng lúc hoặc cùng số version.",
+      "color": "#64748b"
+    },
+    {
+      "id": "sources",
+      "type": "text",
+      "x": 0,
+      "y": 4700,
+      "width": 3200,
+      "height": 150,
+      "text": "## Nguồn & trạng thái\n\nThiết kế theo note và quyết định trong cuộc trao đổi, cập nhật theo yêu cầu tạo thêm NeoMind / NeoApps / NeoLab ngày 24/10/2026.\n[Báo cáo hiện trạng tiếng Việt](NeoProject_BRN_Report.md) · [Canvas thảo luận trước](NeoProject_Discussion.canvas) · [Cây phân cấp trước](NeoProject_Hierarchy.canvas)\nĐã tạo 6 repo mới với README; chưa chuyển nội dung hoặc thêm submodule. NeoMindv1 và các repo cũ giữ nguyên. Chưa nghiệm thu qua VeryThinker.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-heading",
+      "type": "text",
+      "x": 0,
+      "y": 3300,
+      "width": 3200,
+      "height": 190,
+      "text": "# Cơ chế NeoProject — ĐÃ CHỐT\n\n**Repo con phát triển độc lập → chọn mốc stable → NeoProject ghi con trỏ commit → lấy lại đúng tập hợp khi cần.**\nMột commit NeoProject là ảnh chụp tập hợp con trỏ. Tag tổng chỉ đặt tên cho ảnh chụp khi cần.\nThay đổi ở repo con không tự thay đổi con trỏ đã commit trong NeoProject.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-role",
+      "type": "text",
+      "x": 0,
+      "y": 3580,
+      "width": 560,
+      "height": 440,
+      "text": "## NeoProject lưu gì?\n\n• Danh sách repo và URL qua cấu hình submodule.\n• Commit được ghim của từng repo.\n• Ghi chú mốc và trạng thái kiểm tra liên quan.\n• Hướng dẫn lấy lại tập hợp đã khóa.\n\nKhông lưu bản sao mã nguồn repo con; không làm nơi điều phối công việc hằng ngày.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-daily",
+      "type": "text",
+      "x": 660,
+      "y": 3580,
+      "width": 560,
+      "height": 440,
+      "text": "## Làm việc hằng ngày\n\n• Mở repo con cần làm và dùng branch riêng của nó.\n• Commit, kiểm tra và phát hành tại repo đó.\n• Có thể dùng checkout phát triển riêng để không đổi bản dùng khôi phục stable.\n\nKhông cần commit NeoProject sau mỗi thay đổi; không tự động chạy cập nhật tất cả submodule theo nhánh mới nhất.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-freeze",
+      "type": "text",
+      "x": 1320,
+      "y": 3580,
+      "width": 560,
+      "height": 440,
+      "text": "## Khi nào cập nhật?\n\n1. Chọn commit đã được đánh giá là stable.\n2. Đảm bảo commit có trên remote và có thể lấy lại.\n3. Cập nhật đúng con trỏ submodule cần đổi.\n4. Ghi phạm vi / kết quả kiểm tra của mốc.\n5. Commit NeoProject; gắn tag tổng nếu cần.\n\nCác con trỏ repo khác giữ nguyên; không ép phát hành đồng loạt.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-no-release",
+      "type": "text",
+      "x": 1980,
+      "y": 3580,
+      "width": 560,
+      "height": 440,
+      "text": "## Repo không có version?\n\nNeoKnowledge và NeoPlayground có thể cập nhật liên tục, không cần tạo release theo lịch.\n\nNeoProject khóa commit cụ thể đã chọn. Có tag thì dùng tag để mô tả, nhưng con trỏ vẫn là commit chính xác.\n\nKhông dùng tên branch hoặc từ “latest” làm định danh duy nhất của một mốc đã khóa.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-restore",
+      "type": "text",
+      "x": 2640,
+      "y": 3580,
+      "width": 560,
+      "height": 440,
+      "text": "## Lấy lại một mốc\n\nChọn commit hoặc tag của NeoProject, rồi khởi tạo / cập nhật submodule theo con trỏ đã ghi.\n\nKhông dùng chế độ theo remote branch mới nhất khi mục tiêu là khôi phục mốc cũ.\n\nNguồn phải còn lấy được trên remote. Toolchain, dependency, tài nguyên ngoài Git và dữ liệu cá nhân cần cơ chế lưu riêng.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-map",
+      "type": "text",
+      "x": 0,
+      "y": 4120,
+      "width": 1000,
+      "height": 430,
+      "text": "## Implemented repository mapping\n\nNeoProject has exactly five direct root-level submodules:\n`NeoMind/`, `NeoKnowledge/`, `NeoApps/`, `NeoLab/`, `NeoPlayground/`.\n\nEach path points to the matching NeoTech-vietnam repository. No legacy repository or nested submodule was added by this setup.\n\nNeoApps and NeoLab are independent repositories. How future application / product repositories relate to them remains undecided.\n\nInitial pointers are concrete README-only commits, not validated product baselines.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-validation",
+      "type": "text",
+      "x": 1100,
+      "y": 4120,
+      "width": 1000,
+      "height": 430,
+      "text": "## Phân biệt hai mức xác nhận\n\n**Mốc nguồn stable:** các repo được chọn ở commit được đánh giá ổn định trong phạm vi riêng.\n\n**Mốc tích hợp đã kiểm tra:** tập hợp phần cứng, firmware, ứng dụng liên quan đã được xác nhận hoạt động cùng nhau; kèm cấu hình và bằng chứng.\n\nKhông suy ra tương thích chỉ vì từng repo có tag stable. Chỉ ghi đã kiểm tra những gì thực sự được thực hiện. Hardware revision và bảng tương thích nằm trong hồ sơ sản phẩm.",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-example",
+      "type": "text",
+      "x": 2200,
+      "y": 4120,
+      "width": 1000,
+      "height": 430,
+      "text": "## Example of a future integration baseline\n\nA future NeoAssistant milestone could select:\n\n• NeoLab: a commit documenting the chosen device configuration.\n• NeoApps: a commit documenting the selected companion application.\n• NeoMind: a chosen workflow commit.\n• NeoKnowledge / NeoPlayground: selected documentation and examples.\n\nRecord compatibility only after testing. Future app / product repository relationships require a separate decision; this example adds no repository or submodule.",
+      "color": "#64748b"
+    },
+    {
+      "id": "repo-status-legend",
+      "type": "text",
+      "x": 0,
+      "y": -1870,
+      "width": 3220,
+      "height": 230,
+      "text": "# Repository inventory and setup snapshot · 24/10/2026\n\n**GREEN — CREATED:** NeoProject, NeoMind, NeoKnowledge, NeoApps, NeoLab, NeoPlayground. The five components are now initialized direct submodules of NeoProject.\n**BLUE — EXISTING:** 17 repositories from the earlier inventory; this setup leaves them separate.\n**YELLOW — PROPOSED:** uncreated or unconfirmed repositories. **GRAY:** structure and roadmap.\nThe earlier inventory contains 23 repositories. Component pins are README-only; colors do not establish tested features, releases or integration.",
+      "color": "#64748b"
+    },
+    {
+      "id": "repo-new",
+      "type": "text",
+      "x": 0,
+      "y": -1550,
+      "width": 760,
+      "height": 520,
+      "text": "## CREATED · 6 repositories\n\n• [NeoProject](https://github.com/NeoTech-vietnam/NeoProject) — Public\n• [NeoMind](https://github.com/NeoTech-vietnam/NeoMind) — Public\n• [NeoKnowledge](https://github.com/NeoTech-vietnam/NeoKnowledge) — Public\n• [NeoApps](https://github.com/NeoTech-vietnam/NeoApps) — Public\n• [NeoLab](https://github.com/NeoTech-vietnam/NeoLab) — Public\n• [NeoPlayground](https://github.com/NeoTech-vietnam/NeoPlayground) — Public\n\nAll use default branch `main`. NeoProject now records the five initialized direct submodules in commit `f325059`. Components still contain their initial README only; no content migration occurred.",
+      "color": "#16a34a"
+    },
+    {
+      "id": "repo-existing-main",
+      "type": "text",
+      "x": 820,
+      "y": -1550,
+      "width": 760,
+      "height": 520,
+      "text": "## ĐÃ CÓ · Các repo liên quan chính\n\n• [NeoMindv1](https://github.com/NeoTech-vietnam/NeoMindv1) — Public\n• [NeoWeb](https://github.com/NeoTech-vietnam/NeoWeb) — Public\n• [NeoLearning](https://github.com/NeoTech-vietnam/NeoLearning) — Public\n• [NeoWatchApp](https://github.com/NeoTech-vietnam/NeoWatchApp) — Private\n• [NeoWatch](https://github.com/NeoTech-vietnam/NeoWatch) — Private\n\nNeoMindv1 và NeoMind là hai repo riêng. NeoLearning chưa chuyển sang NeoKnowledge; các repo hiện có được giữ nguyên.",
+      "color": "#2563eb"
+    },
+    {
+      "id": "repo-existing-examples",
+      "type": "text",
+      "x": 1640,
+      "y": -1550,
+      "width": 760,
+      "height": 520,
+      "text": "## ĐÃ CÓ · Các repo ví dụ\n\n• [NeoExamples](https://github.com/NeoTech-vietnam/NeoExamples) — Private\n• [NeoExamples-Window](https://github.com/NeoTech-vietnam/NeoExamples-Window) — Private\n• [NeoExamples-ESP32-FreeRTOS](https://github.com/NeoTech-vietnam/NeoExamples-ESP32-FreeRTOS) — Private\n• [NeoExamples-ESP32](https://github.com/NeoTech-vietnam/NeoExamples-ESP32) — Private\n• [NeoExamples-ESP32-Zephyr](https://github.com/NeoTech-vietnam/NeoExamples-ESP32-Zephyr) — Private\n• [NeoExamples-Linux](https://github.com/NeoTech-vietnam/NeoExamples-Linux) — Private\n• [NeoExamples-STM32](https://github.com/NeoTech-vietnam/NeoExamples-STM32) — Private\n• [NeoExamples-Android](https://github.com/NeoTech-vietnam/NeoExamples-Android) — Private\n\nGiữ nguyên. Việc kế thừa vào NeoPlayground chưa được thực hiện.",
+      "color": "#2563eb"
+    },
+    {
+      "id": "repo-existing-other",
+      "type": "text",
+      "x": 2460,
+      "y": -1550,
+      "width": 760,
+      "height": 520,
+      "text": "## ĐÃ CÓ · Chưa chốt vị trí trong thiết kế\n\n• [TANG-NANO](https://github.com/NeoTech-vietnam/TANG-NANO) — Private\n• [NeoBoardSupportPackage](https://github.com/NeoTech-vietnam/NeoBoardSupportPackage) — Private\n• [NeoVerse](https://github.com/NeoTech-vietnam/NeoVerse) — Private\n• [DSMEditor](https://github.com/NeoTech-vietnam/DSMEditor) — Public\n\nRepo tồn tại đã được xác nhận; chưa tự chuyển hoặc quyết định nhóm chỉ dựa vào tên.",
+      "color": "#2563eb"
+    },
+    {
+      "id": "repo-proposed",
+      "type": "text",
+      "x": 2200,
+      "y": -580,
+      "width": 1000,
+      "height": 330,
+      "text": "## ĐỀ XUẤT · Chưa xác nhận có repo\n\n**NeoAssistant:** hiện là concept trong NeoLearning; chưa thấy repo cùng tên trong danh sách GitHub đã kiểm tra. Chưa tạo repo riêng cho sản phẩm hoặc ứng dụng đồng hành của concept này.\n\nNeoApps và NeoLab đã được tạo; không còn nằm trong nhóm chưa tạo.\n\nNhững tính năng / sản phẩm tương lai vẫn là hướng đề xuất.",
+      "color": "#d97706"
+    },
+    {
+      "id": "setup-checkout",
+      "type": "text",
+      "x": 0,
+      "y": 2340,
+      "width": 1000,
+      "height": 800,
+      "text": "# Actual checkout · 24/10/2026\n\n**Location:** `H:\\Learning\\Neo\\NeoProject`\n**Remote:** https://github.com/NeoTech-vietnam/NeoProject.git\n**Branch:** `main` · default branch also `main`.\n\n**Recorded setup commit:**\n`f325059624ba1a8b3a270c943fb0422d5679dd61`\n\nObserved before this canvas update: clean parent worktree, `main` one commit ahead of local `origin/main`. This task does not push or refresh remote refs.\n\n**Setup scope:** `.gitmodules` plus five gitlinks at repository root.\n\n**Canvas:** this file is copied into the NeoProject root as `NeoProject_v2.canvas`. The canvas update is separate from the recorded setup commit.\n\nExisting NeoLearning content and all legacy repositories remain separate.",
+      "color": "#64748b"
+    },
+    {
+      "id": "setup-pins",
+      "type": "text",
+      "x": 1100,
+      "y": 2340,
+      "width": 1000,
+      "height": 800,
+      "text": "# Exact initial component commits\n\nEach path is a direct initialized submodule. All five use the matching HTTPS remote under `NeoTech-vietnam`; their default branch is `main`.\n\n**NeoMind/**\n`c918f0396bc37024742c8baae12f3ef2072e5b01`\n\n**NeoKnowledge/**\n`4a0749fb7f2fb5071e08e052cd1984a8c78a4937`\n\n**NeoApps/**\n`c82f47d88aba39d989a69e3dc38bce121ffccd30`\n\n**NeoLab/**\n`3c0b9d3467301599432c992c398f12b04d630b89`\n\n**NeoPlayground/**\n`7aede8a913dd3dd41b83c6359b9e403ce65d0a7c`\n\nBranch names describe the initial checkout; the superproject records exact commits.",
+      "color": "#64748b"
+    },
+    {
+      "id": "setup-verification",
+      "type": "text",
+      "x": 2200,
+      "y": 2340,
+      "width": 1000,
+      "height": 800,
+      "text": "# Setup verification and restore\n\n**Verified during setup:** exactly five manifest entries, matching remote URLs, initialized submodule Git directories, gitlinks matching component HEADs, and clean component worktrees. Each pinned component contains only its initial README.\n\n**Reproduce committed pointers:**\n```sh\ngit clone --recurse-submodules https://github.com/NeoTech-vietnam/NeoProject.git\n```\nThe remote provides only commits that have been pushed. For the recorded local setup snapshot, use the existing checkout:\n```sh\ngit checkout f325059624ba1a8b3a270c943fb0422d5679dd61\ngit submodule update --init --recursive\n```\n\nUse selected exact commits when updating a baseline; do not automatically advance every submodule to remote branch tips.\n\nNo component release tags are required. Setup checks do not prove product functionality or cross-repository compatibility.",
+      "color": "#64748b"
+    }
+  ],
+  "edges": [
+    {
+      "id": "root-mind",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "mind",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "direct submodule · exact commit",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-mind-contents",
+      "fromNode": "mind",
+      "fromSide": "bottom",
+      "toNode": "mind-contents",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-mind-first",
+      "fromNode": "mind-contents",
+      "fromSide": "bottom",
+      "toNode": "mind-first",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-mind-next",
+      "fromNode": "mind-first",
+      "fromSide": "bottom",
+      "toNode": "mind-next",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-mind-later",
+      "fromNode": "mind-next",
+      "fromSide": "bottom",
+      "toNode": "mind-later",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-mind-boundary",
+      "fromNode": "mind-later",
+      "fromSide": "bottom",
+      "toNode": "mind-boundary",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "root-knowledge",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "knowledge",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "direct submodule · exact commit",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-knowledge-contents",
+      "fromNode": "knowledge",
+      "fromSide": "bottom",
+      "toNode": "knowledge-contents",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-knowledge-first",
+      "fromNode": "knowledge-contents",
+      "fromSide": "bottom",
+      "toNode": "knowledge-first",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-knowledge-next",
+      "fromNode": "knowledge-first",
+      "fromSide": "bottom",
+      "toNode": "knowledge-next",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-knowledge-later",
+      "fromNode": "knowledge-next",
+      "fromSide": "bottom",
+      "toNode": "knowledge-later",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-knowledge-boundary",
+      "fromNode": "knowledge-later",
+      "fromSide": "bottom",
+      "toNode": "knowledge-boundary",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "root-apps",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "apps",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "direct submodule · exact commit",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-apps-contents",
+      "fromNode": "apps",
+      "fromSide": "bottom",
+      "toNode": "apps-contents",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-apps-first",
+      "fromNode": "apps-contents",
+      "fromSide": "bottom",
+      "toNode": "apps-first",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-apps-next",
+      "fromNode": "apps-first",
+      "fromSide": "bottom",
+      "toNode": "apps-next",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-apps-later",
+      "fromNode": "apps-next",
+      "fromSide": "bottom",
+      "toNode": "apps-later",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-apps-boundary",
+      "fromNode": "apps-later",
+      "fromSide": "bottom",
+      "toNode": "apps-boundary",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "root-lab",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "lab",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "direct submodule · exact commit",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-lab-contents",
+      "fromNode": "lab",
+      "fromSide": "bottom",
+      "toNode": "lab-contents",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-lab-first",
+      "fromNode": "lab-contents",
+      "fromSide": "bottom",
+      "toNode": "lab-first",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-lab-next",
+      "fromNode": "lab-first",
+      "fromSide": "bottom",
+      "toNode": "lab-next",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-lab-later",
+      "fromNode": "lab-next",
+      "fromSide": "bottom",
+      "toNode": "lab-later",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-lab-boundary",
+      "fromNode": "lab-later",
+      "fromSide": "bottom",
+      "toNode": "lab-boundary",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "root-playground",
+      "fromNode": "root",
+      "fromSide": "bottom",
+      "toNode": "playground",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "label": "direct submodule · exact commit",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-playground-contents",
+      "fromNode": "playground",
+      "fromSide": "bottom",
+      "toNode": "playground-contents",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-playground-first",
+      "fromNode": "playground-contents",
+      "fromSide": "bottom",
+      "toNode": "playground-first",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-playground-next",
+      "fromNode": "playground-first",
+      "fromSide": "bottom",
+      "toNode": "playground-next",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-playground-later",
+      "fromNode": "playground-next",
+      "fromSide": "bottom",
+      "toNode": "playground-later",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "flow-playground-boundary",
+      "fromNode": "playground-later",
+      "fromSide": "bottom",
+      "toNode": "playground-boundary",
+      "toSide": "top",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-daily-to-stable-freeze",
+      "fromNode": "stable-daily",
+      "fromSide": "right",
+      "toNode": "stable-freeze",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    },
+    {
+      "id": "stable-freeze-to-stable-no-release",
+      "fromNode": "stable-freeze",
+      "fromSide": "right",
+      "toNode": "stable-no-release",
+      "toSide": "left",
+      "toEnd": "arrow",
+      "color": "#64748b"
+    }
+  ]
+}
