@@ -1,0 +1,15 @@
+[submodule "NeoMind"]
+	path = NeoMind
+	url = https://github.com/NeoTech-vietnam/NeoMind.git
+[submodule "NeoKnowledge"]
+	path = NeoKnowledge
+	url = https://github.com/NeoTech-vietnam/NeoKnowledge.git
+[submodule "NeoApps"]
+	path = NeoApps
+	url = https://github.com/NeoTech-vietnam/NeoApps.git
+[submodule "NeoLab"]
+	path = NeoLab
+	url = https://github.com/NeoTech-vietnam/NeoLab.git
+[submodule "NeoPlayground"]
+	path = NeoPlayground
+	url = https://github.com/NeoTech-vietnam/NeoPlayground.git
