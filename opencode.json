@@ -1,0 +1,15 @@
+{
+  "mcp": {
+    "servers": {
+      "neomind": {
+        "type": "local",
+        "command": [
+          "node",
+          "/home/hieu-tran/projects/NeoProject/NeoMind/dist/src/cli/main.js",
+          "mcp",
+          "/home/hieu-tran/projects/NeoProject/NeoKnowledge"
+        ]
+      }
+    }
+  }
+}
